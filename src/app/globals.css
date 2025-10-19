@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-background text-text font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-primary/30 rounded-xl;
+  }
+  
+  .neon-glow {
+    @apply shadow-[0_0_20px_rgba(8,253,216,0.3)];
+  }
+  
+  .neon-glow-secondary {
+    @apply shadow-[0_0_20px_rgba(255,0,255,0.3)];
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+  
+  .gradient-border {
+    @apply border-4 border-transparent bg-gradient-to-r from-primary via-accent to-secondary bg-clip-border;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
