@@ -53,7 +53,7 @@ const Navigation = () => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-primary/30"
+          ? "bg-[#0a0a0f]/80 backdrop-blur-md border-b border-[#08FDD8]/30"
           : "bg-transparent"
       }`}
     >
@@ -132,7 +132,7 @@ const Navigation = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={closeMenu}
-            className="fixed inset-0 bg-background/90 backdrop-blur-sm z-40"
+            className="fixed inset-0 bg-[#0a0a0f]/90 backdrop-blur-sm z-40"
             style={{ marginTop: "80px" }}
           />
         )}

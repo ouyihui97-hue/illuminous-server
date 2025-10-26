@@ -9,7 +9,8 @@
   }
   
   body {
-    @apply bg-background text-text font-sans;
+    @apply text-white font-sans;
+    background-color: #0a0a0f;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
