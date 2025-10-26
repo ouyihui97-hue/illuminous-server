@@ -13,32 +13,32 @@ const AboutSection = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
+        staggerChildren: 0.15,
+        delayChildren: 0.05,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -20 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
-        ease: "easeOut",
+        duration: 0.4,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
   };
 
   const rightItemVariants = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: 20 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
-        ease: "easeOut",
+        duration: 0.4,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
   };
